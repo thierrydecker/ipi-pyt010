@@ -84,3 +84,14 @@ print("Le tuple contient ->", pairs)
 # Version 2
 #
 print("Le tuple contient ->", tuple([i for i in range(0, 2 * nb, 2)]))
+print("Le tuple contient ->", tuple([i * 2 for i in range(0, nb)]))
+
+#
+# Exercice
+#
+# Créer par un boucle la liste suivante
+# [ ['A',1], ['B',2], ... , ['Z',26] ]
+#
+debut, fin = 'A', 'z'
+maListe = [[chr(i), ord(chr(i)) - ord(debut) + 1] for i in range(ord(debut), ord(fin) + 1)]
+print("maListe de", debut, "à", fin, "->", maListe)
