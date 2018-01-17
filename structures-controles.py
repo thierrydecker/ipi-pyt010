@@ -64,3 +64,23 @@ liste_de_personnes = [
 for personne in liste_de_personnes:
     for element in personne:
         print(element)
+
+#
+# Exercice
+#
+# Creer un tuple contenant les dix premiers nombres pairs
+#
+nb = 10
+#
+# Version 1
+#
+pairs = []
+for i in range(0, nb * 2, 2):
+    pairs.append(i)
+pairs = tuple(pairs)
+print("Le tuple contient ->", pairs)
+
+#
+# Version 2
+#
+print("Le tuple contient ->", tuple([i for i in range(0, 2 * nb, 2)]))
