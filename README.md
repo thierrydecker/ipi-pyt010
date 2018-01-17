@@ -1,3 +1,3 @@
-# Learning Python
+# IPI - PYT010
 
-Ressources for Python course by Thierry DECKER
+Ressources pour le cours PYT010, Thierry DECKER
