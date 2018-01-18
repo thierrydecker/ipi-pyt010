@@ -51,13 +51,13 @@ def decimal_to_cidr(dm):
         splitted_dm[i] = format(splitted_dm[i], "0>8b")
 
     binary_mask = "".join(splitted_dm)
-    number_of_ones = binary_mask.count('1')
+    cidr_mask = binary_mask.count('1')
 
-    if number_of_ones != binary_mask[0:number_of_ones].count('1'):
+    if cidr_mask != binary_mask[0:cidr_mask].count('1'):
         print("Invalid mask")
         return None
 
-    return number_of_ones
+    return cidr_mask
 
 
 decimal_mask = '255.255.255.128'
