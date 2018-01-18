@@ -68,7 +68,7 @@ print("Le tuple contient ->", tuple([i * 2 for i in range(0, nb)]))
 #
 # Exercice
 #
-# Créer par un boucle la liste suivante
+# Créer par une boucle la liste suivante
 # [ ['A',1], ['B',2], ... , ['Z',26] ]
 #
 
@@ -79,6 +79,32 @@ print("Le tuple contient ->", tuple([i * 2 for i in range(0, nb)]))
 # Définition des bornes
 debut, fin = ord('A'), ord('z')
 # Création de la liste en compréhension
-maListe = [[chr(i), ord(chr(i)) - debut + 1] for i in range(debut, fin + 1)]
+maListe = [[chr(i), i - debut + 1] for i in range(debut, fin + 1)]
 # Affichage
 print("maListe de", chr(debut), "à", chr(fin), "->", maListe)
+
+#
+# Parcours d'une chaine en ordre inverse avec while
+#
+a = "ABCDEFG"
+compteur = len(a) - 1
+while compteur >= 0:
+    print(a[compteur])
+    compteur -= 1
+
+#
+# Parcourir une liste de listes à l'aide de while
+#
+maListe = [
+    [1, 2],
+    [3, 5],
+    ['a', 'b']
+]
+i = 0
+while i < len(maListe):
+    sousListe = maListe[i]
+    j = 0
+    while j < len(sousListe):
+        print("{} {} --> {}".format(i, j, sousListe[j]))
+        j += 1
+    i += 1
