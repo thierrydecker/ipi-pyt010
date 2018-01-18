@@ -32,7 +32,7 @@ for compteur in range(len(maliste)):
 # Exercice
 #
 liste_de_personnes = [
-    ["Thierry", "Decker", 54],
+    ["Thierry", "Decker", 52],
     ["Martine", "Durand"],
     ["Pierre", "Martin"]
 ]
@@ -75,6 +75,10 @@ print("Le tuple contient ->", tuple([i * 2 for i in range(0, nb)]))
 #
 # Correction
 #
-debut, fin = 'A', 'z'
-maListe = [[chr(i), ord(chr(i)) - ord(debut) + 1] for i in range(ord(debut), ord(fin) + 1)]
-print("maListe de", debut, "à", fin, "->", maListe)
+
+# Définition des bornes
+debut, fin = ord('A'), ord('z')
+# Création de la liste en compréhension
+maListe = [[chr(i), ord(chr(i)) - debut + 1] for i in range(debut, fin + 1)]
+# Affichage
+print("maListe de", chr(debut), "à", chr(fin), "->", maListe)
