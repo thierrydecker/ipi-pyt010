@@ -13,5 +13,5 @@
 #
 # Si le masque donné en notation décimale est invalide, retourner None.
 #
-# Vous n'etes pas autorisé à utilisé l'instruction import.
+# Vous n'etes pas autorisé à utiliser l'instruction import.
 #
