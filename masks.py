@@ -62,11 +62,5 @@ def decimal_to_cidr(decimal_mask):
     return number_of_ones
 
 
-
-
-
-
-
-
 decimal_mask = '255.0.0.0'
 print("Le masque CIDR de {} est {}".format(decimal_mask, decimal_to_cidr(decimal_mask)))
