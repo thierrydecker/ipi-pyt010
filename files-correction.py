@@ -30,7 +30,7 @@ def exercice1(file_src, file_dst):
 def exercice2(file_src, file_dst_consonnes, file_dst_rest):
     # Un fichier avec les consonnes
     # Un fichier avec les reste
-    consonnes = 'zrtypqsdfghjklmwxcvbnAZRTPQSDFGHJKLMWXCVBN'
+    consonnes = 'zrtypqsdfghjklmwxcvbnZRTPQSDFGHJKLMWXCVBN'
     fd = open(file_src)
     file_content = fd.read()
     fd.close()
