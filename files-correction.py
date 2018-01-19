@@ -21,7 +21,7 @@ def exercice1(file_src, file_dst):
     fd = open(file_dst, 'w')
     file_result = []
     for i in range(0, len(file_content)):
-        if i % 2 == 0:
+        if i + 1 % 2 == 0:
             file_result.append(file_content[i])
     fd.writelines(file_result)
     fd.close()
