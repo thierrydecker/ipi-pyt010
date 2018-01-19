@@ -104,7 +104,7 @@ def main():
     text = [
         'This is an exemple 1\n',
         'This is an exemple 2\n',
-        'This is an exemple 2\n',
+        'This is an exemple 3\n',
     ]
     write_file_lines(file_descriptor, text)
 
@@ -135,7 +135,7 @@ def main():
     text, line_number = None, 1
     while text != "":
         text = file_read_next_line(file_descriptor)
-        print(line_number, " -> ", text)
+        print(line_number, " -> ", text, end="")
         line_number += 1
 
     file_close(file_descriptor)
