@@ -29,12 +29,10 @@ def g(a, l=None):
 #
 def main():
 
-    l = ['b']
     for i in range(4):
         l = f("a")
     print(l)
 
-    l = ['1']
     for i in range(4):
         l = g("a")
     print(l)
